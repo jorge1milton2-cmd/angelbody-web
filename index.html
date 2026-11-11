@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Angel Body, centro estético en tratamientos faciales y corporales. Consulta nuestros servicios y coordina una evaluación personalizada.">
+<meta name="theme-color" content="#090909">
+<title>Angel Body | Estética facial y corporal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--black:#090909;--gold:#c99b25;--gold2:#f0d477;--cream:#faf7ef;--muted:#bdb6a7;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:#211d16;font-family:"DM Sans",Arial,sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+.announcement{background:#050505;color:#e8cb72;text-align:center;padding:9px 12px;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+header{background:#090909;color:#fff;border-bottom:1px solid #4b3a14;position:sticky;top:0;z-index:20}
+.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:11px;font-family:"Cormorant Garamond",serif;font-size:29px;letter-spacing:.04em;color:#f1d477}
+.brand-mark{width:38px;height:38px;border:1px solid #c99b25;border-radius:50%;display:grid;place-items:center;color:#d6aa37;font-size:20px}
+nav{display:flex;gap:25px;font-size:13px;color:#eee}nav a:hover{color:#e4c15c}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#f0d477,#b78318);color:#17120a;padding:13px 21px;border-radius:3px;font-size:12px;font-weight:700;letter-spacing:.07em;border:1px solid #d0a63d;transition:.2s}
+.btn:hover{filter:brightness(1.08);transform:translateY(-1px)}.btn-line{background:transparent;color:#f0d477}
+.hero{background:linear-gradient(105deg,rgba(0,0,0,.96),rgba(9,9,9,.82)),radial-gradient(ellipse at 78% 45%,#6b5019,#080808 55%);color:#fff;overflow:hidden}
+.hero-grid{min-height:590px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:55px;padding-top:60px;padding-bottom:60px}
+.eyebrow{font-size:11px;color:#d8b64d;text-transform:uppercase;letter-spacing:.23em;font-weight:700}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;line-height:1.08;font-weight:600}
+h1{font-size:clamp(48px,6vw,76px);margin:18px 0}h1 em{font-style:normal;color:#e4c15c}
+.hero p{color:#d4cec1;max-width:520px;font-size:16px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-small{font-size:12px;color:#b7aa88;margin-top:26px}
+.hero-art{min-height:440px;border:1px solid #8f6c20;border-radius:48% 48% 4px 4px;position:relative;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 40%,#6c5420 0,#211b0d 40%,#080808 75%);overflow:hidden}
+.hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid rgba(222,184,70,.55);border-radius:50%}
+.hero-art:before{width:78%;height:84%;transform:rotate(-18deg)}.hero-art:after{width:58%;height:68%;transform:rotate(22deg)}
+.hero-emblem{position:relative;z-index:1;text-align:center;padding:30px}.hero-emblem .ornament{font-size:56px;color:#e0b83f;line-height:1}.hero-emblem strong{display:block;font:600 42px "Cormorant Garamond",serif;color:#f0d477;letter-spacing:.06em}.hero-emblem span{font-size:10px;letter-spacing:.2em;color:#e8d9a9;text-transform:uppercase}
+.section{padding:86px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 43px}.section-head h2{font-size:clamp(38px,4.5vw,54px);margin:12px 0}.section-head p{color:#6d655a}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{border:1px solid #e8dfca;padding:28px 25px;background:#fff;min-height:220px;position:relative}
+.card:before{content:"";position:absolute;top:0;left:0;width:45px;height:3px;background:#c99b25}
+.card .number{font:600 29px "Cormorant Garamond",serif;color:#b98b25}.card h3{font-size:27px;margin:12px 0 8px}.card p{font-size:14px;color:#70695e;margin:0}
+.note{margin:28px auto 0;max-width:850px;padding:16px 19px;background:#faf6e9;border-left:3px solid #c99b25;color:#62583f;font-size:12px}
+.dark-section{background:#0b0b0a;color:#fff}.dark-section .section-head p{color:#c7c0b2}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}
+.about-visual{min-height:370px;background:radial-gradient(circle at 50% 45%,#82631f,#1a160c 68%,#070707);border:1px solid #a17b25;display:grid;place-items:center}
+.about-visual span{font:600 48px "Cormorant Garamond",serif;color:#e5c45f;text-align:center}
+.about-copy h2{font-size:48px;margin:12px 0}.about-copy p{color:#c9c2b5}
+.bullets{list-style:none;padding:0;margin:22px 0}.bullets li{padding:7px 0 7px 25px;position:relative;color:#e4dfd4}.bullets li:before{content:"✦";position:absolute;left:0;color:#d6ad43}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;text-align:center}.step b{width:48px;height:48px;border:1px solid #c99b25;border-radius:50%;display:inline-grid;place-items:center;color:#a77c1d;font:600 23px "Cormorant Garamond",serif}.step h3{font-size:25px;margin:15px 0 7px}.step p{font-size:14px;color:#70695e}
+.contact{background:#f6f0e1;text-align:center;padding:78px 20px}.contact h2{font-size:50px;margin:12px auto}.contact p{color:#6b6255;max-width:600px;margin:0 auto 25px}
+footer{background:#050505;color:#c9c0ae;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:12px}.foot .brand{font-size:24px}
+.whatsapp{position:fixed;right:20px;bottom:20px;z-index:30;background:#218653;color:#fff;padding:13px 18px;border-radius:30px;font-size:13px;font-weight:700;box-shadow:0 8px 24px #0003}
+@media(max-width:800px){nav{display:none}.hero-grid,.about-grid{grid-template-columns:1fr;gap:32px}.hero-grid{padding-top:48px}.hero-art{min-height:330px}.grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr;gap:28px}.section{padding:65px 0}.about-copy h2{font-size:40px}.foot{flex-direction:column;text-align:center}}
+</style>
+</head>
+<body>
+<div class="announcement">Angel Body · Tratamientos faciales y corporales</div>
+<header><div class="wrap nav">
+  <a class="brand" href="#inicio"><span class="brand-mark">✦</span> ANGEL BODY</a>
+  <nav><a href="#inicio">Inicio</a><a href="#faciales">Faciales</a><a href="#corporales">Corporales</a><a href="#bienestar">Bienestar</a><a href="#contacto">Contacto</a></nav>
+  <a class="btn btn-line" href="#contacto">CONSULTA Y RESERVA</a>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-grid">
+  <div><div class="eyebrow">Belleza · cuidado · bienestar</div>
+    <h1>Dedícate un momento. <em>Siéntete bien.</em></h1>
+    <p>En Angel Body encontrarás opciones de cuidado estético facial y corporal, con orientación personalizada para conocer el tratamiento que mejor se adapte a tus necesidades.</p>
+    <div class="actions"><a class="btn" href="#contacto">CONSULTAR POR WHATSAPP</a><a class="btn btn-line" href="#servicios">VER TRATAMIENTOS</a></div>
+    <div class="hero-small">Atención con cita previa · Consulta disponibilidad y evaluación</div>
+  </div>
+  <div class="hero-art" role="img" aria-label="Emblema dorado de Angel Body sobre fondo negro"><div class="hero-emblem"><div class="ornament">❧ ✦ ❧</div><strong>ANGEL BODY</strong><span>Tratamientos faciales y corporales</span></div></div>
+</div></section>
+
+<section class="section" id="servicios"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Nuestros tratamientos</div><h2>Opciones para tu cuidado personal</h2><p>Conoce nuestras áreas de atención y contáctanos para recibir detalles sobre cada servicio, sus condiciones y disponibilidad.</p></div>
+  <div class="grid" id="faciales">
+    <article class="card"><div class="number">01 · FACIAL</div><h3>Limpieza facial simple y profunda</h3><p>Alternativas de limpieza y cuidado facial, según evaluación y características de la piel.</p></article>
+    <article class="card"><div class="number">02 · FACIAL</div><h3>Tratamientos personalizados</h3><p>Protocolos de cuidado facial adaptados a la consulta y valoración individual.</p></article>
+    <article class="card"><div class="number">03 · FACIAL</div><h3>Vitamina C y cuidado facial</h3><p>Aplicación cosmética de vitamina C y opciones complementarias de cuidado, previa orientación.</p></article>
+    <article class="card"><div class="number">04 · FACIAL</div><h3>Tratamiento enzimático</h3><p>Consulta por las opciones de tratamiento enzimático facial y sus indicaciones.</p></article>
+    <article class="card"><div class="number">05 · FACIAL</div><h3>Plasma rico en plaquetas (PRP)</h3><p>Servicio sujeto a evaluación, indicación, información de riesgos y realización por profesional habilitado.</p></article>
+    <article class="card"><div class="number">06 · FACIAL</div><h3>Tratamiento de papada</h3><p>Consulta por las alternativas disponibles para el área submentoniana y la evaluación previa.</p></article>
+  </div>
+  <div class="section-head" id="corporales" style="margin-top:72px;margin-bottom:35px"><div class="eyebrow">Cuidado corporal</div><h2>Tratamientos corporales</h2><p>Alternativas que se revisan de acuerdo con los objetivos, antecedentes y evaluación de cada persona.</p></div>
+  <div class="grid">
+    <article class="card"><div class="number">07 · CORPORAL</div><h3>Tratamiento post-lipo</h3><p>Atención de cuidado posterior a procedimientos, previa coordinación y de acuerdo con las indicaciones del equipo tratante.</p></article>
+    <article class="card"><div class="number">08 · CORPORAL</div><h3>Tratamiento para celulitis</h3><p>Consulta por las opciones estéticas disponibles y la valoración de cada caso.</p></article>
+    <article class="card"><div class="number">09 · CORPORAL</div><h3>Reducción de medidas</h3><p>Opciones para brazos, abdomen y espalda. Los resultados y la idoneidad varían según cada persona.</p></article>
+    <article class="card"><div class="number">10 · CORPORAL</div><h3>Reafirmación muscular</h3><p>Opciones de trabajo estético en bíceps, tríceps y muslos. Consulta por equipos y técnicas disponibles.</p></article>
+    <article class="card"><div class="number">11 · CORPORAL</div><h3>Realce de glúteos</h3><p>Consulta por los servicios de realce o aumento de glúteos, técnica utilizada, evaluación y condiciones.</p></article>
+    <article class="card"><div class="number">12 · BIENESTAR</div><h3>Masajes relajantes y descontracturantes</h3><p>Sesiones orientadas a la relajación y al bienestar muscular, previa consulta de disponibilidad.</p></article>
+  </div>
+  <div class="note">La disponibilidad, indicaciones y contraindicaciones se determinan mediante evaluación individual. Los tratamientos no garantizan resultados específicos. Los procedimientos médicos o invasivos deben ser evaluados y realizados por profesionales legalmente habilitados, con información previa y consentimiento.</div>
+</div></section>
+
+<section class="section dark-section" id="bienestar"><div class="wrap about-grid">
+  <div class="about-visual"><span>ANGEL<br>BODY<br>✦</span></div>
+  <div class="about-copy"><div class="eyebrow">Nuestra atención</div><h2>Un trato cercano y personalizado</h2>
+    <p>Queremos que conozcas cada alternativa con claridad. Antes de reservar, podrás consultar en qué consiste el servicio, quién lo realiza, sus cuidados, posibles riesgos, precio y disponibilidad.</p>
+    <ul class="bullets"><li>Orientación de acuerdo con tu consulta.</li><li>Información clara sobre cada tratamiento.</li><li>Coordinación de citas y horarios.</li></ul>
+    <a class="btn" href="#contacto">SOLICITAR INFORMACIÓN</a>
+  </div>
+</div></section>
+
+<section class="section"><div class="wrap"><div class="section-head"><div class="eyebrow">Reserva tu atención</div><h2>¿Cómo empezar?</h2><p>Estamos para ayudarte a resolver tus consultas antes de coordinar una cita.</p></div>
+<div class="steps"><div class="step"><b>1</b><h3>Escríbenos</h3><p>Cuéntanos qué tratamiento te interesa.</p></div><div class="step"><b>2</b><h3>Consulta</h3><p>Recibe información sobre evaluación, indicaciones y disponibilidad.</p></div><div class="step"><b>3</b><h3>Coordina tu cita</h3><p>Confirma fecha y hora directamente con Angel Body.</p></div></div></div></section>
+
+<section class="contact" id="contacto"><div class="eyebrow">Contáctanos</div><h2>Tu momento de cuidado empieza aquí</h2><p>Escríbenos para conocer nuestros tratamientos faciales y corporales, consultar precios y coordinar una cita.</p>
+<a class="btn" href="https://wa.me/51999999999?text=Hola%20Angel%20Body%2C%20quisiera%20informaci%C3%B3n%20sobre%20sus%20tratamientos." target="_blank" rel="noopener">CONSULTAR POR WHATSAPP</a></section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#inicio">✦ ANGEL BODY</a><span>© <span id="year"></span> Angel Body. Todos los derechos reservados.</span><span>Tratamientos faciales y corporales</span></div></footer>
+<a class="whatsapp" href="https://wa.me/51999999999?text=Hola%20Angel%20Body%2C%20quisiera%20informaci%C3%B3n." target="_blank" rel="noopener">WhatsApp ↗</a>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body></html>
